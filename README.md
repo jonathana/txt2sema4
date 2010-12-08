@@ -7,7 +7,7 @@ For example, the program converts "foo" into foxtrot oscar oscar and shows it on
 
 ## Download/Install/Compatibility
 
-The Android apk installer file is available under downloads.  You can browser to it on your Android phone or scan the QR code to install it, if you have allowed your phone to install out-of-market apps.  I will probably put this in the store eventually.
+The Android apk installer file is available under [downloads](https://github.com/jonathana/txt2sema4/downloads).  You can browser to it on your Android phone or scan the QR code to install it, if you have allowed your phone to install out-of-market apps.  I will probably put this in the store eventually.
 
 The application should be compatible with Android versions 1.6 and higher.  It does not have any special requirements.  It is Samsung Galaxy Tab-compatible, and runs on my Nexus One.  You will not have access to the text to speech 
 
