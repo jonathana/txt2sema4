@@ -1,6 +1,6 @@
 # Txt2Sema4
 
-Ever have to spell something out for someone over the phone?  Type any string into the text box on this program and click "pronounce" and this program will use the ![NATO Phonetic Alphabet](http://en.wikipedia.org/wiki/NATO_phonetic_alphabet) to give you a word to say for each letter you are trying to spell.  Saves the awkward searching for words whose first letters sound like the letter you are trying to say.
+Ever have to spell something out for someone over the phone?  Type any string into the text box on this program and click "pronounce" and this program will use the [NATO Phonetic Alphabet](http://en.wikipedia.org/wiki/NATO_phonetic_alphabet) to give you a word to say for each letter you are trying to spell.  Saves the awkward searching for words whose first letters sound like the letter you are trying to say.
 
 For example, the program converts "foo" into foxtrot oscar oscar and shows it on screen, optionally speaking it out loud to you if your phone has text to speech capability installed.
 
