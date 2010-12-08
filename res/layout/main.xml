@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<TextView android:text="@string/Pronounce_value_label" android:id="@+id/Pronounce_value_label" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+<EditText android:text="" android:id="@+id/Pronounce_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1"></EditText>
+<LinearLayout android:id="@+id/RelativeLayout01" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+	<CheckBox android:text="@string/ShouldSpeak" android:id="@+id/ShouldSpeak" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingRight="5dip"></CheckBox><TextView android:text="@string/Pronounce_speed_label" android:id="@+id/Pronounce_speed_label" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+	<Spinner android:prompt="@string/Pronounce_speed_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Pronounce_speed_spinner"></Spinner>
+
+</LinearLayout>
+<Button android:text="@string/Pronounce_button" android:id="@+id/Pronounce_button" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
+
+<ScrollView android:id="@+id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<TextView android:text="" android:id="@+id/Pronounce_output" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+</ScrollView>
+
+
+
+</LinearLayout>

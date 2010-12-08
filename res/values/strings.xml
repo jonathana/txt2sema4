@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="Pronounce_value_label">Text to pronounce:</string>
+    <string name="Pronounce_speed_label">Speech speed:</string>
+    <string name="Pronounce_button">Pronounce!</string>
+    <string name="app_name">Txt2Sema4</string>
+    <string name="ErrMsg_NoTTS">Text-to-speech not installed.  Will try to install for you now...</string>
+    <string name="ShouldSpeak">Say it!</string>
+<string-array name="speech_speeds_array">
+        <item>Slow</item>
+        <item>Normal</item>
+        <item>Fast</item>
+    </string-array>
+</resources>
