@@ -18,5 +18,5 @@
 
 
 
-<uses-sdk android:targetSdkVersion="8" android:minSdkVersion="4"></uses-sdk>
+<uses-sdk android:targetSdkVersion="8" android:minSdkVersion="8"></uses-sdk>
 </manifest> 

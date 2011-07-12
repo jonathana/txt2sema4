@@ -51,6 +51,7 @@ public class txt2sema4Main extends Activity implements OnInitListener {
 	protected EditText pronounce_input;
 	protected TextToSpeech mTts = null;
 	protected Spinner speedSpinner = null;
+	protected Spinner localeSpinner = null;
 	protected CheckBox shouldSay = null;
 	public String lastSpoken = null;
 	private final static HashMap<Character, String> letterDecodes = new HashMap<Character, String>() {
@@ -90,7 +91,21 @@ public class txt2sema4Main extends Activity implements OnInitListener {
 		}
 	};
 
-	
+	private final static HashMap<String, java.util.Locale> locales = new HashMap<String, java.util.Locale>() {
+            /**
+             * 
+             */
+            private static final long serialVersionUID = 1L;
+
+            {
+                     put("American", Locale.ENGLISH);
+                     put("British", Locale.UK);
+                     put("French", Locale.FRENCH);
+                     put("German", Locale.GERMAN);
+                     put("Canada French", Locale.CANADA_FRENCH);
+                   
+            }
+    };
 	public enum SpeechSpeeds {
 		SLOW, NORMAL, FAST;
 	}
@@ -108,6 +123,14 @@ public class txt2sema4Main extends Activity implements OnInitListener {
 		speedSpinner.setAdapter(adapter);
 		// @TODO: this is tightly tied to the string list
 		speedSpinner.setSelection(1);
+		
+		localeSpinner = (Spinner) findViewById(R.id.Locale_spinner);
+	                ArrayAdapter<CharSequence> locale = ArrayAdapter.createFromResource(
+	                                this, R.array.locales_array, android.R.layout.simple_spinner_item);
+	                locale.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	        localeSpinner.setAdapter( locale );
+	        localeSpinner.setSelection(1);
+	        
 		
 		shouldSay = (CheckBox)findViewById(R.id.ShouldSpeak);
 
@@ -191,6 +214,7 @@ public class txt2sema4Main extends Activity implements OnInitListener {
 							break;
 					}
 					mTts.setSpeechRate(tts_speed_value);
+					mTts.setLanguage( locales.get( localeSpinner.getSelectedItem() ));
 					mTts.speak(pronounce_response, TextToSpeech.QUEUE_FLUSH, null);
 				}
 			}
