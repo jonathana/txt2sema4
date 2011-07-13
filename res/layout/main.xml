@@ -12,6 +12,7 @@
 	<Spinner android:prompt="@string/Pronounce_speed_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Pronounce_speed_spinner"></Spinner>
 
 </LinearLayout>
+<Spinner android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/Locale_spinner"></Spinner>
 <Button android:text="@string/Pronounce_button" android:id="@+id/Pronounce_button" android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
 
 <ScrollView android:id="@+id/ScrollView01" android:layout_width="fill_parent" android:layout_height="fill_parent">
